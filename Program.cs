@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using POO_Abstract.Models;
+
+var primerAnimal = new Animal(1, "dogpool", "canina");
+Console.WriteLine(primerAnimal);

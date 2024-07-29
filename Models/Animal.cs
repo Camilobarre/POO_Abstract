@@ -6,14 +6,17 @@ using System.Threading.Tasks;
 namespace POO_Abstract.Models;
 public class Animal
 {
-    public int Id {get; set; }
-    public string Nombre {get; set; }
-    public string Especie {get; set; }
-    private string specie2;
-    public Animal(int id, string nombre, string especie)
+    protected int Id { get; set; }
+    protected string Nombre { get; set; }
+    protected string Especie { get; set; }
+    protected Animal(int id, string nombre, string especie)
     {
-        Id=id;
-        Nombre=nombre;
-        Especie=especie;
-    }    
+        Id = id;
+        Nombre = nombre;
+        Especie = especie;
+    }
+    protected void Saludar()
+    {
+        Console.WriteLine($"Hola, soy {Nombre}");
+    }
 }
