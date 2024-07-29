@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 namespace POO_Abstract.Models;
 public class Perro : Animal
 {
-  public bool EsCriollo { get; set; }
-  public Perro(int id, string nombre, string especie, bool esCriollo) : base(id, nombre, especie)
-  {
-    EsCriollo = esCriollo;
-  }
+    public bool EsCriollo { get; set; }
+    public Perro(int id, string nombre, string especie, bool esCriollo) : base(id, nombre, especie)
+    {
+        EsCriollo = esCriollo;
+    }
+
+    public string GetNombre()
+    {
+        return Nombre;
+    }
 }
