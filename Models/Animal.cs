@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace POO_Abstract.Models;
-public class Animal
+public abstract class Animal
 {
     public int Id { get; set; }
     public string Nombre { get; set; }
@@ -15,8 +15,6 @@ public class Animal
         Nombre = nombre;
         Especie = especie;
     }
-    public void Saludar()
-    {
-        Console.WriteLine($"Hola, soy {Nombre}");
-    }
+    //Cuando se usa la palabra reservada Abstract, se obliga a usar el método en la clase hijo
+    public abstract void Saludar();
 }

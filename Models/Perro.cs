@@ -12,8 +12,8 @@ public class Perro : Animal
         EsCriollo = esCriollo;
     }
 
-    public string GetNombre()
+    public override void Saludar()
     {
-        return Nombre;
+        Console.WriteLine($"Hola, mi nombre es {Nombre}");
     }
 }
